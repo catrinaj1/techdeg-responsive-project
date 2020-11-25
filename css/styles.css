@@ -1,0 +1,317 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #FAFAFA;
+	color: #4A4A4A;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.5;
+	margin: 0;
+}
+
+h2 {
+	font-size: 1.1em;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-weight: 400;
+}
+
+p {
+	font-weight: 300;
+}
+
+ul, li {
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+}
+
+.img {
+	max-width: 100%;
+}
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Layout Containers ---- */
+
+.main-header,
+.about-section,
+.skills-section {
+	text-align: center;
+}
+
+.about-section {
+	padding-top: 30px;
+}
+
+.portfolio-section {
+	background-color: #fff;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.skills-section {
+	background-color: #1c1b20;
+	padding-bottom: 40px;
+}
+
+.contact-section {
+	padding-top: 40px;
+	text-align: center;
+}
+
+.col {
+	padding: 1.5em 1em;
+	height: 100%;
+}
+
+/* ---- Navigation ---- */
+
+.header-name a,
+.footer-nav a {
+	color: #4A4A4A;
+	display: block;
+	text-decoration: none;
+}
+
+.main-nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.main-nav li {
+	background-color: #1c1b20;
+	list-style: none;
+	margin: 10px;
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+
+.footer-nav li {
+	list-style: none;
+	text-transform: uppercase;
+}
+
+/* ---- Page Elements ---- */
+
+.intro-para {
+	font-weight: 300;
+	font-size: 1.2em;
+	margin: 0 auto;
+	padding: 20px 0 30px;
+	width: 65%;
+}
+
+.col img {
+	width: 100%;
+}
+
+.col p,
+.contact-section p {
+	margin: 0 auto;
+	width: 90%;
+	max-width: 450px;
+}
+
+.portfolio-section h2,
+.skills-section h2 {
+	padding: 50px 0 20px;
+}
+
+.skills-section h2,
+.skills-section h3 {
+	color: #fff;
+}
+
+.skills-section h3 {
+	font-family: 'Squada One', sans-serif;
+	margin: 5px auto;
+}
+
+.skills-section li {
+	font-weight: 400;
+	list-style: none;
+	color: #e5e5e5;
+}
+
+.development-list {
+	padding-bottom: 20px;
+}
+
+.contact-section h2 {
+	padding-bottom: 10px;
+}
+
+.contact-section p {
+	color: #7F7F7F;
+}
+
+.contact-info {
+	padding: 20px 0 40px;
+	line-height: 35px;
+}
+
+.border,
+.main-footer {
+	margin: 0 auto;
+	width: 90%;
+}
+
+.border {
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.main-footer {
+	padding: 15px 0 70px;
+}
+
+.main-footer p {
+	font-weight: 700;
+}
+
+.text1 {
+	float: left;
+}
+
+.text2 {
+	text-transform: uppercase;
+	float: right;
+}
+
+.text2 a {
+	text-decoration: none;
+	color: #4A4A4A;
+}
+
+.footer-nav {
+	display: none;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	.main-nav a {
+		color: #4A4A4A;
+	}
+	.main-nav li {
+		background-color: #FAFAFA;
+		display: inline-block;
+		padding-left: 10px;
+	}
+
+	.main-nav li a:hover,
+	.footer-nav li a:hover {
+		color: #cfdbdb;
+	}
+
+	.about-section {
+		margin: 1em 2em 3em;
+	}
+
+	.intro-para {
+		float: left;
+		max-width: 500px;
+		padding-right: 10px;
+		padding-top: 0;
+		text-align: left;
+	}
+
+	.profile-img {
+		float: right;
+		width: 35%;
+	}
+
+	.skills-container {
+		margin: 0 auto;
+		max-width: 400px;
+	}
+
+	.col {
+		height: 400px;
+	}
+
+	.col,
+	.skills-list {
+		width: 50%;
+		float: left;
+	}
+
+	.text2 {
+		display: none;
+	}
+
+	.footer-nav {
+		display: block;
+		float: right;
+	}
+
+	.footer-nav li {
+		padding-left: 30px;
+		float: left;
+	}
+
+	.text1,
+	.footer-nav {
+		margin: 5px;
+	}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.main-header ,
+	.about-section {
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	.header-name {
+		float: left;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.about-section {
+		padding-bottom: 40px;
+	}
+
+	.intro-para {
+		max-width: 800px;
+		padding-right: 20px;
+	}
+
+	.portfolio-section{
+		margin: 0 2em;
+	}
+
+	.col {
+		height: 470px;
+	}
+
+	.col {
+		width: 33%;
+	}
+
+}
